@@ -37,8 +37,9 @@ function Recipe() {
   );
 }
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root")
-);
+const rootElement = document.getElementById("root");
 
-root.render(<Recipe />);
+if (rootElement && typeof ReactDOM !== "undefined") {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(<Recipe />);
+}
