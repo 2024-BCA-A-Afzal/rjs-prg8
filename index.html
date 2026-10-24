@@ -1,22 +1,56 @@
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>React Card</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>React Recipe Cards</title>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .card {
+            display: inline-block;
+            vertical-align: top;
+            width: 250px;
+            box-sizing: border-box;
+            margin: 12px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            text-align: left;
+        }
+
+        .card h2 {
+            color: #d35400;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+        }
+    </style>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
 </head>
 
 <body>
+    <div id="root"></div>
 
-<div id="root"></div>
-
-<script type="text/babel" src="index.js"></script>
-
+    <script type="text/babel" src="./index.js"></script>
 </body>
-
 </html>
